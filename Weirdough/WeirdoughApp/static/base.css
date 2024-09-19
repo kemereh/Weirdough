@@ -1,0 +1,198 @@
+   /* Custom CSS styles for pizza creation form */
+    .pizza-form-container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+ 
+    .container {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .order {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .btn {
+        background-color: #04AA6D; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+    .order h3 {
+        margin-top: 0;
+        color: #333;
+    }
+
+    .order ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .order ul li {
+        margin-bottom: 5px;
+    }
+
+
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center; /* Adjust the path to your image */
+        background-image: url(../static/new.jpg);
+        background-size: 612px 360px; /* Cover the entire background */
+        background-position: center; /* Center the background image */
+        background-repeat: repeat; /* Do not repeat the background image */
+        margin-bottom: 100px;
+    }
+
+
+    header {
+        background-color: #660b0b;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    nav a {
+
+        background-color: #660b0b;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 10px 20px;
+    }
+
+    nav a:hover {
+        background-color: #555;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .pizza-menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .pizza-item {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+    }
+
+
+    .pizza-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .pizza-item h2 {
+        margin-top: 0;
+    }
+
+    .pizza-item p {
+        margin-bottom: 10px;
+    }
+
+    .pizza-item button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .pizza-item button:hover {
+        background-color: #555;
+    }
+
+    footer {
+        background-color: #660b0b;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border: 20px;
+    }
+    p {
+        text-align: center;
+    }
+    .signup-form {
+        background-color: #f9f9f9;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }

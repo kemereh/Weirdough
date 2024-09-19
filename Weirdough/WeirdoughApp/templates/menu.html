@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Menu
+{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <h1>Menu</h1>
+
+    <!-- Customizable Pizzas -->
+    <h2>Customizable Pizzas</h2>
+    <ul>
+        {% for pizza in pizza %}
+            <div class="signup-form">
+            <li>{{ pizza.size }} {{ pizza.crust }} {{ pizza.sauce }} Pizza with {{ pizza.cheese }} Cheese and {{ pizza.toppings }}</li>
+            </div>
+        {% endfor %}
+    </ul>
+
+    <!-- Predefined Pizzas -->
+    <h2>Predefined Pizzas</h2>
+    <ul>
+        {% for predefined_pizza in predefined_pizza %}
+        <div class="signup-form">
+            <li>
+                <strong>{{ predefined_pizza.name }}</strong><br>
+                Description: {{ predefined_pizza.description }}<br>
+                Size: {{ predefined_pizza.size }}<br>
+                Crust: {{ predefined_pizza.crust }}<br>
+                Sauce: {{ predefined_pizza.sauce }}<br>
+                Cheese: {{ predefined_pizza.cheese }}<br>
+                Toppings: {{ predefined_pizza.toppings }}<br>
+                <a href="{% url 'customize' predefined_pizza.id %}">Customize</a> <!-- Link to customization page -->
+            </li>
+        </div>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
+{% endblock %}

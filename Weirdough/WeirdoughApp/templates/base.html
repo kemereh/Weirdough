@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{% static "base.css" %}">
+<title>Pizza Ordering Website</title>
+
+</head>
+{% block title %}
+{% endblock %}
+<body>
+
+<header>
+    <h1>Weirdough</h1>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/contact/">Contact</a>
+    <a href="/create-pizza">Order Here</a>
+    <a href="/view-orders">Orders</a>
+    <a href="/register">Register</a>
+    {% if user.is_authenticated %}
+        <a href="/logout/">Logout</a>
+    {% else %}
+        <a href="/login/">Login</a>
+    {% endif %}
+    
+</nav>
+
+
+<footer>
+    <p>&copy; 2024 Weirdough. All rights reserved.</p>
+</footer>
+{% block content %}
+{% endblock %}
+</body>
+</html>

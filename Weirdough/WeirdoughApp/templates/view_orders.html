@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    View Previous Pizza Orders
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <a href='/create-pizza/' class="btn">Order Again!</a>
+    <h2>Previous Pizza Orders</h2>
+    <div class="orders">
+        {% for order in orders %}
+        <div class="order">
+            <h3>Order #{{ forloop.counter }}</h3>
+            <ul>
+                <li>Crust: {{ order.pizza.crust }}</li>
+                <li>Sauce: {{ order.pizza.sauce }}</li>
+                <li>Cheese: {{ order.pizza.cheese }}</li>
+                <li>Size: {{ order.pizza.size }}</li>
+                <li>Toppings: {{ order.pizza.toppings }}</li>
+                <li> {{ order.order_date }}</li>
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

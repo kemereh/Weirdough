@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<head>
+    <title>Order Confirmation</title>
+</head>
+<body>
+    <div class="signup-form">
+        <h1>Order Confirmation</h1>
+        <p>Your pizza:</p>
+        <p>Size: {{ pizza.size }}</p>
+        <p>Crust Type: {{ pizza.crust }}</p>
+        <p>Sauce: {{ pizza.sauce }}</p>
+        <p>Cheese: {{ pizza.cheese }}</p>
+        <p>Toppings: {{ pizza.toppings }}</p>
+        <p> Order Date: {{ order_date }} </p>
+    </div>
+    <!-- Add more details as needed -->
+</body>
+</html>
+{% endblock %}

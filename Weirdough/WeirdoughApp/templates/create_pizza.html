@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Make your Pizza
+{% endblock %}
+
+{% block content %}
+<body>
+    <div class="pizza-form-container">
+        <h1>Create Your Pizza</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.as_p }}
+            </div>
+            <button type="submit" class="btn btn-primary">Order</button>
+        </form>
+    </div>
+</body>
+{% endblock %}

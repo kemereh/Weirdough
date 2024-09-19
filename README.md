@@ -9,7 +9,6 @@ Table of Contents
 5. Tech Stack
 6. Screenshots
 7. Contributing
-8. License
 
 
 Features
